@@ -394,9 +394,9 @@ color: var(--accent-color);
     padding: 16px 32px;
     border: 1px solid var(--border-icon);
     border-radius: 4px;
-    width: 170px;
+    /* width: 170px;
     height: 92px;
-    cursor: pointer;
+    cursor: pointer; */
     align-items: center;
     justify-content: center;
     
@@ -405,14 +405,17 @@ color: var(--accent-color);
 .client-item:not(:last-child){
     margin-right: 30px;
 }
-.client-item:hover,
+/* .client-item:hover,
 .client-item:focus{
     border: 1px solid var(--fill-bgr-hover);
-}
+} */
 
 .client-link{
     display: flex;
-    fill: var(--fill-icon);
+    color: var(--fill-icon);
+    width: 170px;
+    height: 92px;
+    cursor: pointer;
     
     
     align-items: center;
@@ -421,7 +424,7 @@ color: var(--accent-color);
 }
 .client-link:hover,
 .client-link:focus{
-    fill:var(--fill-bgr-hover);
+    color:var(--fill-bgr-hover);
 }
 
 .client-icon{
