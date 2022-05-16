@@ -173,12 +173,14 @@ color: var(--accent-color);
     fill: currentColor;
     margin-right: 10px;
     align-items: center;
+    
 }
 
 /*Герой*/
 
 .hero{
     max-width: 1600px;
+    height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-image:linear-gradient( rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero/hero.jpg);
@@ -354,14 +356,14 @@ color: var(--accent-color);
     justify-content: center;
 
     color: var(--fill-icon) ;
-
+    
     width: 44px;
     height: 44px;
+    border-radius: 50%;
 }
 .team-link:hover, 
 .team-link:focus{
     background-color: var(--fill-bgr-hover);
-    border-radius: 50%;
     color:var(--fill-hover-color);
 }
 
@@ -395,7 +397,6 @@ color: var(--accent-color);
     display: flex;
     fill: var(--fill-icon);
     
-    padding: 16px 32px;
     border: 1px solid var(--border-icon);
     border-radius: 4px;
     width: 170px;
@@ -427,7 +428,6 @@ color: var(--accent-color);
 }
 .container-footer{
     align-items: baseline;
-    justify-content: flex-start;
 }
 .footer-contacts{
     margin-right: 70px;
@@ -513,6 +513,7 @@ color: var(--accent-color);
     border-radius: 4px;
     padding: 6px 22px;
     border: none;
+    cursor: pointer;
     
     background-color: var(--secondary-bgr-color);
     font-weight: 500;
@@ -523,7 +524,6 @@ color: var(--accent-color);
 .portfolio-section .button:hover, 
 .portfolio-section .button:focus { color: var(--accent-white-color);
     background-color: var(--accent-color);
-    cursor: pointer;
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);}
 
 .portfolio-section .button.current {  color: var(--accent-white-color);
@@ -540,10 +540,6 @@ color: var(--accent-color);
     margin-bottom: 30px;
 
     background-color: var(--accent-white-color);
-}
-.project-list:hover,
-.project-list:focus{
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-list:nth-child(3n){
@@ -568,6 +564,14 @@ color: var(--accent-color);
 .project-list .text { color: var(--title-text-color);
     font-size: 16px;
     line-height: 1.88;
+}
+.project-link{
+    display: block;
+}
+
+.project-link:hover,
+.project-link:focus{
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .project-card{
